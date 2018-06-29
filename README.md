@@ -10,11 +10,11 @@ A [Visual Studio Code](https://code.visualstudio.com/) extension to lint [CSS](h
 
 1. Execute `Extensions: Install Extensions` command from [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 2. Type `@sort:installs stylelint` into the search form and install the topmost one.
-3. Use stylelint with globe config: npm nstall stylelint-config-standard -g, add it's path to the [setting](https://code.visualstudio.com/docs/getstarted/settings) like this:
+3. Use stylelint with global config: npm nstall stylelint-config-standard -g, add it's path to the [setting](https://code.visualstudio.com/docs/getstarted/settings) like this:
 
 ```json
 "stylelint.config": {
-    "extends": "C:\\Users\\YourUserName\\AppData\\Roaming\\nodejs\\npm-global\\node_modules\\stylelint-config-recommended"
+  "extends": "npmGlobalPath/node_modules/stylelint-config-recommended"
   }
 ```
 
